@@ -1,0 +1,38 @@
+# --- Terraform ---
+# State : contient des données sensibles, ne jamais versionner
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.tfplan
+tfplan
+
+# Variables réelles (peuvent contenir des valeurs sensibles)
+*.tfvars
+*.tfvars.json
+# ...mais on garde les exemples
+!*.tfvars.example
+
+# NB : .terraform.lock.hcl DOIT être versionné (verrouille les versions des providers)
+
+# --- Secrets et identifiants ---
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+
+# --- Rapport généré ---
+report/build/
+
+# --- Système / éditeur ---
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+*.swp
