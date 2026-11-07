@@ -28,8 +28,10 @@ tfplan
 *.pfx
 *.p12
 
-# --- Rapport généré ---
-report/build/
+# --- Rapport LaTeX ---
+# Rien du dossier report/ ne part sur GitHub, sauf le PDF final
+report/*
+!report/*.pdf
 
 # --- Système / éditeur ---
 .DS_Store
