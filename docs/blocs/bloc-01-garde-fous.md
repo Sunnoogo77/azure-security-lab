@@ -119,7 +119,7 @@ az role assignment create \
 
 ```console
 {
-  "principalId":      "799d4b52-8810-4005-86c4-8616f86eb1a7",
+  "principalId":      "<group-object-id>",
   "principalType":    "Group",
   "roleDefinitionId": ".../roleDefinitions/acdd72a7-3385-48ef-bd42-f606fba81ae7",
   "scope":            "/subscriptions/<subscription-id>",
