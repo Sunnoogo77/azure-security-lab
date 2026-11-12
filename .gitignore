@@ -18,6 +18,10 @@ tfplan
 # ...mais on garde les exemples
 !*.tfvars.example
 
+# Coordonnées du backend : contiennent le nom réel du storage account
+backend.hcl
+!backend.hcl.example
+
 # NB : .terraform.lock.hcl DOIT être versionné (verrouille les versions des providers)
 
 # --- Secrets et identifiants ---

@@ -1,0 +1,8 @@
+# Modèle. Copier en backend.hcl et remplacer <suffixe> par la vraie valeur.
+# backend.hcl n'est pas versionné : il contient le nom réel du storage account.
+
+resource_group_name  = "rg-asl-tfstate"
+storage_account_name = "stasltfstate<suffixe>"
+container_name       = "tfstate"
+key                  = "dev.terraform.tfstate"
+
